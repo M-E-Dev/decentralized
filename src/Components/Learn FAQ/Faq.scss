@@ -1,0 +1,122 @@
+@import "../../scss/mixins", "../../scss/variables";
+.button-container{
+  display: flex;
+  justify-content: center;
+}
+.faq {
+  display: flex;
+  flex-direction: column;
+  // height: 100vh;
+min-height: 75vh;
+  * {
+    transition:  1s ease;
+  }
+  // padding: 1rem;
+  //   border: 1px solid green;
+  .title {
+    font-size: 3rem !important;
+    letter-spacing: 8px;
+    font-family: $glacial-indiffrence;
+    margin-bottom: 1rem;
+    &.center {
+      margin: 20px auto;
+    }
+  }
+  .faq-question {
+    padding: 8px 10px;
+  }
+  .faq-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 15px;
+    .left {
+      margin-right: 20px;
+      ul li {
+        font-family: $glacial-indiffrence;
+        transition: 300ms all;
+        max-width: 300px;
+        cursor: pointer;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        margin-bottom: 5px;
+        text-align: center;
+        list-style-type: none;
+        &:hover {
+          color: black;
+          background-color: #f5f5f5;
+        }
+      }
+    }
+    .right {
+      flex: 1;
+      //   margin: 0 auto 0 auto;
+      max-width: 600px;
+      font-family: $glacial-indiffrence;
+    }
+  }
+  .display-linebreak {
+    white-space: pre-line;
+  }
+}
+@include media-xl {
+  .faq {
+    display: flex;
+    flex-direction: column;
+    // height: 100vh;
+  min-height: 50vh;
+    * {
+      transition:  1s ease;
+    }
+    // padding: 1rem;
+    //   border: 1px solid green;
+    .title {
+      font-size: 6rem !important;
+      letter-spacing: 8px;
+      font-family: $glacial-indiffrence;
+      margin-bottom: 1rem;
+      &.center {
+        margin: 20px auto;
+      }
+    }
+    .faq-question {
+      padding: 8px 10px;
+    }
+    .faq-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      padding-top: 15px;
+      .left {
+        margin-right: 20px;
+        ul li {
+          font-family: $glacial-indiffrence;
+          font-size: 1.7rem !important;
+          transition: 300ms all;
+          max-width: 700px;
+          cursor: pointer;
+          border: 1px solid #ccc;
+          border-radius: 10px;
+          margin-bottom: 5px;
+          text-align: center;
+          list-style-type: none;
+          &:hover {
+            color: black;
+            background-color: #f5f5f5;
+          }
+        }
+      }
+      .right {
+        flex: 1;
+        //   margin: 0 auto 0 auto;
+        max-width: 700px;
+        font-family: $glacial-indiffrence;
+        font-size: 1.7rem !important;
+
+      }
+    }
+    .display-linebreak {
+      white-space: pre-line;
+    }
+  }
+}

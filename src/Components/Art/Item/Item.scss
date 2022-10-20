@@ -1,0 +1,31 @@
+.Item {
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 8px 10px;
+  img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+  }
+  .abstract {
+    max-width: 300px;
+    font-size: 16px;
+    text-align: center;
+  }
+  .social-medias {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    .social {
+      transition: all 0.3s ease-in-out;
+      &:hover {
+        cursor: pointer;
+        transform: scale(1.2);
+      }
+    }
+  }
+}

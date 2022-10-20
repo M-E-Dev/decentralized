@@ -1,0 +1,87 @@
+@import "../../scss/mixins", "../../scss/variables";
+.container {
+  height: 100vh;
+  h2 {
+    font-size: 3rem;
+    letter-spacing: 8px;
+
+  }
+  //   border: 1px solid yellow;
+  font-family: $glacial-indiffrence;
+  position: relative;
+  .content {
+    height: calc(100% - 94.4px);
+    display: flex;
+    // border: 1px solid crimson;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    // padding: 2rem 0;
+    .questions {
+      font-size: 3rem;
+      text-align: center;
+      letter-spacing: 10px;
+    }
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      gap: 2rem;
+      font-size: 4rem;
+      padding: 4rem 0;
+      text-align: center;
+      & > i {
+        background: white;
+        color: #060606;
+        padding: 1rem;
+        border-radius: 50%;
+        transition: all linear 0.5s;
+        cursor: pointer;
+        &:hover {
+          opacity: 0.6;
+        }
+      }
+    }
+    .copyright {
+      position: absolute;
+      bottom: 2rem;
+      font-size: 1rem;
+    }
+  }
+}
+@include media-md {
+  .container { 
+    height:auto;    
+    .content {
+      margin-top: 1rem;
+      height: auto;
+      .questions {
+        font-size: 1.5rem; 
+        letter-spacing: 3px;
+      }
+      .links {
+        padding: 2rem 0;
+      }
+      .copyright {
+        position: static;
+        // margin-top: 1rem;
+      }
+    }
+  }
+}
+@include media-xl {
+  .container {
+    h2 {
+      font-size:6rem;
+    } 
+    .content { 
+      .questions {
+        font-size: 4rem;  
+      } 
+      .copyright { 
+        font-size: 2rem;
+      }
+    }
+  }
+}
